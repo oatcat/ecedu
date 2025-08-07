@@ -8,7 +8,8 @@
     </head>
     <body>
         <!-- Sidebar -->
-        <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <div class="w3-sidebar w3-light-grey w3-bar-block w3-collapse w3-card w3-animate-left" style="width:400px" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
             <h3 class="w3-bar-item">Engineering Analysis</h3>
             <a class="w3-bar-item w3-button" href="../index.html">Home</a>
             <a class="w3-bar-item w3-button" href="../lc-1.html">Linear Circuits One</a>
@@ -19,9 +20,10 @@
             <a class="w3-bar-item w3-button" href="../contact.html">Contact Me</a>
         </div>
         <!-- Page Content -->
-        <div style="margin-left:25%">
+        <div class="w3-main" style="margin-left:400px">
            <!-- Title Container-->
             <div class="w3-container w3-green">
+                <button class="w3-button w3-green w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
                 <h1>Electrical & Computer Education: Peer Resource Sharing</h1>
             </div>
            <!-- Body Container-->
@@ -29,5 +31,6 @@
                <h2>Engineering Analysis Practice:</h2>
            </div>
         </div>
+        <script src="../script.js"></script>
     </body>
 </html>
