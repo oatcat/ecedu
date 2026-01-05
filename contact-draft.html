@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Electrical & Computer Education</title>
+        <link rel="stylesheet" href="w3.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            :root{
+                --avatar: 192px;
+            }
+            .bio-headshot{
+                width: var(--avatar);
+                height: var(--avatar);
+                object-fit: cover;
+                flex: 0 0 auto;
+            }
+            /* Make bubble match headshot height */
+            .bio-bubble{
+                height: 256px;
+                width: auto;              /* keep aspect ratio */
+                max-width: 640px;
+                flex: 1 1 auto;
+                display: block;
+            }
+            .bio-bubble-container {
+                display: flex;
+                align-items: center;
+                gap: 0px;
+                margin-top: 8px;
+                max-width: 1100px;
+                width: 100%;
+            }
+            .bubble-shape{
+                fill: #e8f5e9;
+                stroke: #2e7d32;
+                stroke-width: 4;
+            }
+            .bubble-text{
+                font-family: system-ui, -apple-system, sans-serif;
+                font-size: clamp(19px, 1.2vw, 24px);
+                line-height: 1.55;
+                color: #1b1b1b;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                text-align: justify;
+                padding: 2px 6px;
+                box-sizing: border-box;
+            }
+            .about-section {
+                display: block;
+            }
+
+            .about-alt {
+                display: none;
+            }
+
+            @media (max-width: 1000px) {
+                .about-section {
+                    display: none;
+                }
+
+                .about-alt {
+                    display: block;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Sidebar -->
+        <div id="sidebar-slot"></div>
+        <script src="js/include-sidebar.js"></script>
+        <!-- Page Content -->
+        <div class="w3-main" style="margin-left:300px">
+            <!-- Title Container-->
+            <div class="w3-container w3-green">
+                <button class="w3-button w3-green w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+                <h1>Electrical & Computer Education: Peer Resource Sharing</h1>
+            </div>
+            <!-- Body Container-->
+            <div class="w3-container">
+                <div class="about-section">
+                    <h2>About Us:</h2>
+                    <div class="bio-bubble-container">
+                        <img src="site-images/matthew-headshot.jpg" alt="Photo of Matthew Giannacco" class="bio-headshot">
+                        <svg class="bio-bubble" viewBox="180 0 860 420" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <clipPath id="bubbleClip">
+                                <path d="M140 50 H780 a34 34 0 0 1 34 34 V270 a34 34 0 0 1 -34 34 H330 L205 365
+                                    L240 304 H140 a34 34 0 0 1 -34 -34 V84 a34 34 0 0 1 34 -34 Z"/>
+                            </clipPath>
+                        </defs>
+                        <path class="bubble-shape" d="M140 50 H780 a34 34 0 0 1 34 34 V270 a34 34 0 0 1 -34 34 
+                              H330 L205 365 L240 304 H140 a34 34 0 0 1 -34 -34 V84 a34 34 0 0 1 34 -34 Z"/>
+                        <g clip-path="url(#bubbleClip)">
+                        <foreignObject x="170" y="85" width="600" height="200">
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="bubble-text">
+                            I’m a junior electrical engineering student at the University of Central
+                            Florida. Currently, I serve as an Undergraduate Learning Assistant (ULA) for
+                            Linear Circuits 1 and as the Community Service Chair at the IEEE UCF Student
+                            Chapter. Outside of academics, I enjoy cooking, working on cars, weightlifting,
+                            and exploring all things related to electrical engineering.
+                        </div>
+                        </foreignObject>
+                        </g>
+                        </svg>
+                    </div>
+                    <div class="bio-bubble-container">
+                        <img src="site-images/cat6.png" alt="Photo of Kevin Ho" class="bio-headshot">
+                        <svg class="bio-bubble" viewBox="180 0 860 420" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                        <clipPath id="bubbleClip">
+                            <path d="M140 50 H780 a34 34 0 0 1 34 34 V270 a34 34 0 0 1 -34 34 H330 L205 365
+                                  L240 304 H140 a34 34 0 0 1 -34 -34 V84 a34 34 0 0 1 34 -34 Z"/>
+                        </clipPath>
+                        </defs>
+                        <path class="bubble-shape" d="M140 50 H780 a34 34 0 0 1 34 34 V270 a34 34 0 0 1 -34 34 
+                              H330 L205 365 L240 304 H140 a34 34 0 0 1 -34 -34 V84 a34 34 0 0 1 34 -34 Z"/>
+                        <g clip-path="url(#bubbleClip)">
+                        <foreignObject x="170" y="85" width="600" height="200">
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="bubble-text">
+                            Hello, I am Kevin. If you are a fine shyt, please email me.
+                        </div>
+                        </foreignObject>
+                        </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="about-alt">
+                    <h2>About Us:</h2>
+                    <p><b>Matthew: </b>I’m a junior electrical engineering student at the University of Central
+                            Florida. Currently, I serve as an Undergraduate Learning Assistant (ULA) for
+                            Linear Circuits 1 and as the Community Service Chair at the IEEE UCF Student
+                            Chapter. Outside of academics, I enjoy cooking, working on cars, weightlifting,
+                            and exploring all things related to electrical engineering.</p><br>
+                    <p><b>Kevin: I am Kevin.</b></p>
+                </div>
+                <h2>Contact Information:</h2>
+                <p>You may contact Matthew at his email address, <a href="mailto:giannacco@ucf.edu">giannacco@ucf.edu</a>.</p>
+                <p>You may contact Kevin at his email address, <a href="mailto:giannacco@ucf.edu">hoang.ho@ucf.edu</a>.</p>
+                <p>You can always send us a question and we will do our best to read it and reply back quickly. We will also create any new or missing resources.</p>
+                <p>Connect with Matthew on <a href="https://www.linkedin.com/in/matthew-giannacco/">LinkedIn!</a></p>
+                <p>Connect with Kevin on <a href="https://www.linkedin.com/in/matthew-giannacco/">LinkedIn!</a></p>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
+

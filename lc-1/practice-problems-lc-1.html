@@ -11,7 +11,7 @@
         <div id="sidebar-slot"></div>
         <script src="../js/include-sidebar.js"></script>
         <!-- Page Content -->
-        <div class="w3-main" style="margin-left:400px">
+        <div class="w3-main" style="margin-left:300px">
            <!-- Title Container-->
             <div class="w3-container w3-green">
                 <button class="w3-button w3-green w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
@@ -19,266 +19,327 @@
             </div>
            <!-- Body Container-->
             <div class="w3-container">
-                <p class="w3-text-bold w3-text-orange">Between now and the beginning of the semester, I am working on expanding the selection of practice problems for LC1. If you would like access to a practice quiz, contact me. For now, they are unavailable.</p>
+                <p class="w3-text-bold w3-text-red">Spring 2026: We have developed two versions of each practice quiz topic! Merry Christmas! &#127876;<br>As the semester progresses, solutions will become available.</p>
+                <p class="w3-text-bold w3-text-orange">Students: If you notice any errors or mistakes, <a href="../contact.html">contact us.</a></p>
+                <p class="w3-text-bold w3-text-orange">Instructors: If you would like any individual quiz to be removed or replaced, <a href="../contact.html">contact us.</a></p>
+                <div class="w3-bar w3-margin-bottom">
+                    <button class="w3-button w3-green w3-round w3-margin-right" onclick="expandAllAccordions()">Expand all</button>
+                    <button class="w3-button w3-light-grey w3-round" onclick="collapseAllAccordions()">Collapse all</button>
+                </div>
                 <h2>Practice Quizzes</h2>
                 <!--<p>An accordion is used to show (and hide) HTML content:</p>-->
                 <button onclick="myFunction('one')" class="w3-btn w3-block w3-note w3-left-align w3-hover-pale-green w3-card">Quiz One: KCL, KCL, and Ohm's Law</button>
-                <div id="one" class="w3-container w3-hide w3-padding">
+                <div id="one" class="w3-container w3-hide w3-padding accordion-panel accordion-panel">
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One: Easy</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1-1.pdf" target="_blank">Version One: Easy</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1-1-s.pdf" target="_blank">Version One Solution</a>-->
+                        <a class="w3-small w3-tooltip">Version One Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two: Intermediate</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1-2.pdf" target="_blank">Version Two: Intermediate</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>
+                        <a class="w3-small w3-tooltip">Version Two Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1-2-s.pdf" target="_blank">Version Two Solution</a>-->
                     </div>
                 </div><br>
                 <button onclick="myFunction('two')" class="w3-btn w3-block w3-note w3-left-align w3-hover-pale-green w3-card">Quiz Two: Equivalent Resistance</button>
-                <div id="two" class="w3-container w3-hide w3-padding">
+                <div id="two" class="w3-container w3-hide w3-padding accordion-panel">
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One: Easy</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-2-1.pdf" target="_blank">Version One: Easy</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>
+                        <a class="w3-small w3-tooltip">Version One Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two: Intermediate</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-2-2.pdf" target="_blank">Version Two: Hard</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>
+                        <a class="w3-small w3-tooltip">Version Two Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>-->
                     </div>
                 </div><br>
                 <button onclick="myFunction('three')" class="w3-btn w3-block w3-note w3-left-align w3-hover-pale-green w3-card">Quiz Three: Superposition</button>
-                <div id="three" class="w3-container w3-hide w3-padding">
+                <div id="three" class="w3-container w3-hide w3-padding accordion-panel">
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One: Easy</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-3-1.pdf" target="_blank">Version One: Easy</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>
+                        <a class="w3-small w3-tooltip">Version One Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two: Intermediate</a>
+                        <a class="w3-medium w3-tooltip">Version Two: Intermediate <span class="w3-text w3-medium">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-3-2.pdf" target="_blank">Version Two: Intermediate</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>
+                        <a class="w3-small w3-tooltip">Version Two Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>-->
                     </div>
                 </div><br>
                 <button onclick="myFunction('four')" class="w3-btn w3-block w3-note w3-left-align w3-hover-pale-green w3-card">Quiz Four: Node Voltage Analysis</button>
-                <div id="four" class="w3-container w3-hide w3-padding">
+                <div id="four" class="w3-container w3-hide w3-padding accordion-panel">
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One: Easy</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-4-1.pdf" target="_blank">Version One: Easy</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>
+                        <a class="w3-small w3-tooltip">Version One Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two: Intermediate</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-4-2.pdf" target="_blank">Version Two: Hard</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>
+                        <a class="w3-small w3-tooltip">Version Two Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>-->
                     </div>
                 </div><br>
                 <button onclick="myFunction('five')" class="w3-btn w3-block w3-note w3-left-align w3-hover-pale-green w3-card">Quiz Five: Mesh Current Analysis</button>
-                <div id="five" class="w3-container w3-hide w3-padding">
+                <div id="five" class="w3-container w3-hide w3-padding accordion-panel">
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One: Easy</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-5-1.pdf" target="_blank">Version One: Easy</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>
+                        <a class="w3-small w3-tooltip">Version One Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two: Intermediate</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-5-2.pdf" target="_blank">Version Two: Hard</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>
+                        <a class="w3-small w3-tooltip">Version Two Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>-->
                     </div>
                 </div><br>
                 <button onclick="myFunction('six')" class="w3-btn w3-block w3-note w3-left-align w3-hover-pale-green w3-card">Quiz Six: Thévenin and Norton Equivalent Circuits with Maximum Power Transfer</button>
-                <div id="six" class="w3-container w3-hide w3-padding">
+                <div id="six" class="w3-container w3-hide w3-padding accordion-panel">
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One: Easy</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-6-1.pdf" target="_blank">Version One: Easy</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>
+                        <a class="w3-small w3-tooltip">Version One Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two: Intermediate</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-6-2.pdf" target="_blank">Version Two: Intermediate</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>
+                        <a class="w3-small w3-tooltip">Version Two Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>-->
                     </div>
                 </div><br>
                 <button onclick="myFunction('seven')" class="w3-btn w3-block w3-note w3-left-align w3-hover-pale-green w3-card">Quiz Seven: Properties of the Capacitor and Inductor</button>
-                <div id="seven" class="w3-container w3-hide w3-padding">
+                <div id="seven" class="w3-container w3-hide w3-padding accordion-panel">
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">RLC Circuit Analysis under DC Conditions: Easy</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-7-1.pdf" target="_blank">RLC Circuit Analysis under DC Conditions: Easy</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">RLC Circuit Analysis under DC Conditions: Easy Solution</a>
+                        <a class="w3-small w3-tooltip">Version One Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">RLC Circuit Analysis under DC Conditions: Easy Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Capacitance and Inductance: Intermediate</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-7-2.pdf" target="_blank">Capacitance and Inductance: Intermediate</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Capacitance and Inductance: Intermediate Solution</a>
+                        <a class="w3-small w3-tooltip">Version Two Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Capacitance and Inductance: Intermediate Solution</a>-->
                     </div>
                 </div><br>
                 <button onclick="myFunction('eight')" class="w3-btn w3-block w3-note w3-left-align w3-hover-pale-green w3-card">Quiz Eight: RL and RC Circuits</button>
-                <div id="eight" class="w3-container w3-hide w3-padding">
+                <div id="eight" class="w3-container w3-hide w3-padding accordion-panel">
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One: Easy</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-8-1.pdf" target="_blank">Version One: Easy</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>
+                        <a class="w3-small w3-tooltip">Version One Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two: Intermediate</a>
+                        <a class="w3-medium w3-tooltip">Version Two: Hard <span class="w3-text w3-medium">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-8-2.pdf" target="_blank">Version Two: Intermediate</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>
+                        <a class="w3-small w3-tooltip">Version Two Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>-->
                     </div>
                 </div><br>
                 <button onclick="myFunction('nine')" class="w3-btn w3-block w3-note w3-left-align w3-hover-pale-green w3-card">Quiz Nine: Phasors</button>
-                <div id="nine" class="w3-container w3-hide w3-padding">
+                <div id="nine" class="w3-container w3-hide w3-padding accordion-panel">
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Phasor Math: Easy</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-9-phasor-math-1.pdf" target="_blank">Phasor Math: Easy</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Phasor Math: Easy Solution</a>
+                        <a class="w3-small w3-tooltip">Phasor Math: Easy Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Phasor Math: Easy Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Phasor Math: Intermediate</a>
+                        <a class="w3-medium w3-tooltip">Phasor Math: Intermediate <span class="w3-text w3-medium">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz.pdf" target="_blank">Phasor Math: Intermediate</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Phasor Math: Intermediate Solution</a>
+                        <a class="w3-small w3-tooltip">Phasor Math: Intermediate Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Phasor Math: Intermediate Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Equivalent Impedance: Easy</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-9-1.pdf" target="_blank">Equivalent Impedance: Easy</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Equivalent Impedance: Easy Solution</a>
+                        <a class="w3-small w3-tooltip">Equivalent Impedance: Easy Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Equivalent Impedance: Easy Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Equivalent Impedance: Intermediate</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-9-2.pdf" target="_blank">Equivalent Impedance: Intermediate</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Equivalent Impedance: Intermediate Solution</a>
+                        <a class="w3-small w3-tooltip">Equivalent Impedance: Intermediate Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Equivalent Impedance: Intermediate Solution</a>-->
                     </div>
                 </div><br>
                 <button onclick="myFunction('ten')" class="w3-btn w3-block w3-note w3-left-align w3-hover-pale-green w3-card">Quiz Ten: Sinusoidal Steady-State Analysis</button>
-                <div id="ten" class="w3-container w3-hide w3-padding">
+                <div id="ten" class="w3-container w3-hide w3-padding accordion-panel">
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One: Easy</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-10-1.pdf" target="_blank">Version One: Easy</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>
+                        <a class="w3-small w3-tooltip">Version One Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two: Intermediate</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-10-2.pdf" target="_blank">Version Two: Intermediate</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>
+                        <a class="w3-small w3-tooltip">Version Two Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>-->
                     </div>
                 </div><br>
                 <button onclick="myFunction('eleven')" class="w3-btn w3-block w3-note w3-left-align w3-hover-pale-green w3-card">Quiz Eleven: Complex Power</button>
-                <div id="eleven" class="w3-container w3-hide w3-padding">
+                <div id="eleven" class="w3-container w3-hide w3-padding accordion-panel">
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One: Easy</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-11-1.pdf" target="_blank">Version One: Hard</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>
+                        <a class="w3-small w3-tooltip">Version One Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two: Intermediate</a>
+                        <a class="w3-medium w3-tooltip">Version Two <span class="w3-text w3-medium">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-11-2.pdf" target="_blank">Version Two: Intermediate</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>
+                        <a class="w3-small w3-tooltip">Version Two Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>-->
                     </div>
                 </div><br>
                 <h2>Practice Exams</h2>
                 <button onclick="myFunction('twelve')" class="w3-btn w3-block w3-note w3-left-align w3-hover-pale-green w3-card">Practice Exam One</button>
-                <div id="twelve" class="w3-container w3-hide w3-padding">
+                <div id="twelve" class="w3-container w3-hide w3-padding accordion-panel">
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/exam-1-1.pdf" target="_blank">Version One</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>
+                        <a class="w3-small w3-tooltip">Version One Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/exam-1-2.pdf" target="_blank">Version Two</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>
+                        <a class="w3-small w3-tooltip">Version Two Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>-->
                     </div>
                 </div><br>
                 <button onclick="myFunction('thirteen')" class="w3-btn w3-block w3-note w3-left-align w3-hover-pale-green w3-card">Practice Exam Two</button>
-                <div id="thirteen" class="w3-container w3-hide w3-padding">
+                <div id="thirteen" class="w3-container w3-hide w3-padding accordion-panel">
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One</a>
+                        <a class="w3-medium w3-tooltip">Version One <span class="w3-text w3-medium">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/exam-2-1.pdf" target="_blank">Version One</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>
+                        <a class="w3-small w3-tooltip">Version One Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/exam-2-2.pdf" target="_blank">Version Two</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>
+                        <a class="w3-small w3-tooltip">Version Two Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>-->
                     </div>
                 </div><br>
                 <button onclick="myFunction('fourteen')" class="w3-btn w3-block w3-note w3-left-align w3-hover-pale-green w3-card">Practice Exam Three</button>
-                <div id="fourteen" class="w3-container w3-hide w3-padding">
+                <div id="fourteen" class="w3-container w3-hide w3-padding accordion-panel">
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One</a>
+                        <a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/exam-3-1.pdf" target="_blank">Version One</a>
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>
+                        <a class="w3-small w3-tooltip">Version One Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two</a>
+                        <a class="w3-medium w3-tooltip">Version Two <span class="w3-text w3-medium">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/exam-3-2.pdf" target="_blank">Version Two</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>
+                        <a class="w3-small w3-tooltip">Version Two Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>-->
                     </div>
                 </div><br>
                 <button onclick="myFunction('fifteen')" class="w3-btn w3-block w3-note w3-left-align w3-hover-pale-green w3-card">Practice Final Exam</button>
-                <div id="fifteen" class="w3-container w3-hide w3-padding">
+                <div id="fifteen" class="w3-container w3-hide w3-padding accordion-panel">
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One: Including DC Circuits</a>
+                        <a class="w3-medium w3-tooltip">Version One: Including DC Circuits <span class="w3-text w3-medium">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/final-1.pdf" target="_blank">Version One: Including DC Circuits</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>
+                        <a class="w3-small w3-tooltip">Version One Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version One Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two: AC Circuits Only</a>
+                        <a class="w3-medium w3-tooltip">Version Two: AC Circuits Only <span class="w3-text w3-medium">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/final-2.pdf" target="_blank">Version Two: AC Circuits Only</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>
+                        <a class="w3-small w3-tooltip">Version Two Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version Two Solution</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-medium" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Three: AC Circuits Only</a>
+                        <a class="w3-medium w3-tooltip">Version Three: AC Circuits Only <span class="w3-text w3-medium">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-medium" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/final-3.pdf" target="_blank">Version Three: AC Circuits Only</a>-->
                     </div>
                     <div class="w3-padding-small">
-                        <a class="w3-small" href="../site-pdfs/ds-pdfs/ds-practice-pdfs/quiz-1.pdf" target="_blank">Version Three Solution</a>
+                        <a class="w3-small w3-tooltip">Version Three Solution <span class="w3-text">(<em>Not yet available!</em>)</span></a>
+                        <!--<a class="w3-small" href="../site-pdfs/lc-1-pdfs/lc-1-practice-pdfs/quiz-1.pdf" target="_blank">Version Three Solution</a>-->
                     </div>
-                </div><br>
+                </div>
             </div>
-            <script>
+               <script>
                 function myFunction(id) {
-              var x = document.getElementById(id);
-              if (x.className.indexOf("w3-show") === -1) {
-                x.className += " w3-show";
-              } else { 
-                x.className = x.className.replace(" w3-show", "");
-              }
-            }
+                  var x = document.getElementById(id);
+                  if (x.className.indexOf("w3-show") === -1) {
+                    x.className += " w3-show";
+                  } else {
+                    x.className = x.className.replace(" w3-show", "");
+                  }
+                }
+
+                function expandAllAccordions() {
+                  var panels = document.querySelectorAll(".accordion-panel");
+                  panels.forEach(function (p) {
+                    if (p.className.indexOf("w3-show") === -1) p.className += " w3-show";
+                  });
+                }
+
+                function collapseAllAccordions() {
+                  var panels = document.querySelectorAll(".accordion-panel");
+                  panels.forEach(function (p) {
+                    p.className = p.className.replace(" w3-show", "");
+                  });
+                }
             </script>
             </div>
-        </div>
         <script src="../js/script.js"></script>
     </body>
 </html>
