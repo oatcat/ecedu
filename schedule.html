@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Schedule</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table.schedule {
+        width: 100%;
+        border-collapse: collapse; /* makes single clean grid lines */
+        table-layout: fixed;
+      }
+
+      .schedule th,
+      .schedule td {
+        border: 1px solid #333;
+        padding: 10px;
+        vertical-align: top;
+        word-wrap: break-word;
+      }
+
+      .schedule thead th {
+        text-align: center;
+        font-weight: 700;
+      }
+
+      /* Time column */
+      .schedule th.time,
+      .schedule td.time {
+        width: 120px;
+        text-align: left;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      /* Make rows feel like “hour blocks” */
+      .schedule tbody tr {
+        height: 70px;
+      }
+
+      /* Event block styling */
+      .event {
+        background: #b6d192;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.25;
+      }
+      .office {
+          background: #b892d1;
+          text-align: center;
+          font-size: 14px;
+          line-height: 1.25;
+      }
+      .lab {
+          background: #b892d1;
+          text-align: center;
+          font-size: 14px;
+          line-height: 1.25;
+      }
+
+      /* Optional: nicer empty cells */
+      .empty {
+        background: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table class="schedule" id="WEEKLY_SCHED_HTMLAREA" summary="Weekly Schedule">
+      <thead>
+        <tr>
+          <th class="time">Time</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- 8:00 AM -->
+        <tr>
+          <td class="time">8:00AM</td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+        </tr>
+
+        <!-- 9:00 AM -->
+        <tr>
+          <td class="time">9:00AM</td>
+          <td class="empty"></td>
+
+          <!-- Tue lab 9-11:50 (covers 9,10,11) -->
+          <td class="event" rowspan="3">
+            EEE 3307C - 0012<br />
+            ELECTRONICS I<br />
+            Laboratory<br />
+            9:00AM - 11:50AM<br />
+            ENGINEERING I O474
+          </td>
+
+          <!-- Wed lab 9-11:50 (covers 9,10,11) -->
+          <td class="event" rowspan="3">
+            EEL 3926L - 0013<br />
+            JUNIOR DESIGN<br />
+            Laboratory<br />
+            9:00AM - 11:50AM<br />
+            ENGINEERING I O274
+          </td>
+
+          <td class="empty"></td>
+          <td class="empty"></td>
+        </tr>
+
+        <!-- 10:00 AM -->
+        <tr>
+          <td class="time">10:00AM</td>
+          <td class="empty"></td>
+          <!-- Tue/Wed are occupied by rowspans -->
+          <td class="empty"></td>
+          <td class="empty"></td>
+        </tr>
+
+        <!-- 11:00 AM -->
+        <tr>
+          <td class="time">11:00AM</td>
+          <td class="empty"></td>
+
+          <td class="empty"></td>
+
+          <!-- Fri leadership 11:30-12:20 (covers 11 and 12) -->
+          <td class="event">
+              EGS 3031 - 0001<br />
+              LEADERSHIP IN ENGINEERING II<br />
+              Lecture<br />
+              11:30AM - 12:20PM<br />
+              ENGINEERING II 0102
+          </td>
+
+        </tr>
+
+        <!-- 12:00 PM -->
+        <tr>
+          <td class="time">12:00PM</td>
+
+          <!-- Mon electronics lecture 12:30-1:20 (covers 12 and 1) -->
+          <td class="event" rowspan="2">
+            EEE 3307C - 0001<br />
+            ELECTRONICS I<br />
+            Lecture<br />
+            12:30PM - 1:20PM<br />
+            CLASSROOM BUILDING I O318
+          </td>
+
+          <td class="empty"></td>
+
+          <!-- Wed electronics lecture 12:30-1:20 (covers 12 and 1) -->
+          <td class="event" rowspan="2">
+            EEE 3307C - 0001<br />
+            ELECTRONICS I<br />
+            Lecture<br />
+            12:30PM - 1:20PM<br />
+            CLASSROOM BUILDING I O318
+          </td>
+
+          <td class="empty"></td>
+
+          <!-- Fri electronics lecture 12:30-1:20 (covers 12 and 1) -->
+          <td class="event" rowspan="2">
+            EEE 3307C - 0001<br />
+            ELECTRONICS I<br />
+            Lecture<br />
+            12:30PM - 1:20PM<br />
+            CLASSROOM BUILDING I O318
+          </td>
+        </tr>
+
+        <!-- 1:00 PM -->
+        <tr>
+          <td class="time">1:00PM</td>
+          <!-- Mon/Wed/Fri occupied by rowspans -->
+          <td class="empty"></td>
+          <td class="empty"></td>
+        </tr>
+
+        <!-- 2:00 PM -->
+        <tr>
+          <td class="time">2:00PM</td>
+          <td class="office" rowspan="2">
+            EEL 3004C - 0002<br />
+            LINEAR CIRCUITS I<br />
+            Office Hours<br />
+            1:30PM - 2:50PM<br />
+            TBD
+          </td><td class="office" rowspan="2">
+            EEL 3004C - 0002<br />
+            LINEAR CIRCUITS I<br />
+            Office Hours<br />
+            1:30PM - 2:50PM<br />
+            TBD
+          </td><td class="lab" rowspan="2">
+            EEL 3004C - 0013<br />
+            LINEAR CIRCUITS I<br />
+            Discussion<br />
+            2:00PM - 3:50PM<br />
+            ENGINEERING I O474
+          </td><td class="empty"></td><td class="empty"></td>
+        </tr>
+
+        <!-- 3:00 PM -->
+        <tr>
+          <td class="time">3:00PM</td>
+          <td class="empty"></td><td class="empty"></td>
+        </tr>
+
+        <!-- 4:00 PM -->
+        <tr>
+          <td class="time">4:00PM</td>
+          <td class="empty"></td><td class="empty"></td><td class="lab" rowspan="2">
+            EEL 3004C - 0014<br />
+            LINEAR CIRCUITS I<br />
+            Discussion<br />
+            4:00PM - 5:50PM<br />
+            ENGINEERING I O474
+          </td><td class="empty"></td><td class="empty"></td>
+        </tr>
+
+        <!-- 5:00 PM -->
+        <tr>
+          <td class="time">5:00PM</td>
+          <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+        </tr>
+
+        <!-- 6:00 PM -->
+        <tr>
+          <td class="time">6:00PM</td>
+
+          <!-- Mon embedded lecture 6-7:15 (covers 6 and 7) -->
+          <td class="event" rowspan="2">
+            EEL 4742C - 0002<br />
+            EMBEDDED SYSTEMS<br />
+            Lecture<br />
+            6:00PM - 7:15PM<br />
+            CLASSROOM BUILDING I O318
+          </td>
+
+          <!-- Tue embedded lab 6-7:50 (covers 6 and 7) -->
+          <td class="event" rowspan="2">
+            EEL 4742C - 0012<br />
+            EMBEDDED SYSTEMS<br />
+            Laboratory<br />
+            6:00PM - 7:50PM<br />
+            ENGINEERING I O257
+          </td>
+
+          <!-- Wed embedded lecture 6-7:15 (covers 6 and 7) -->
+          <td class="event" rowspan="2">
+            EEL 4742C - 0002<br />
+            EMBEDDED SYSTEMS<br />
+            Lecture<br />
+            6:00PM - 7:15PM<br />
+            CLASSROOM BUILDING I O318
+          </td>
+
+          <td class="empty"></td>
+          <td class="empty"></td>
+        </tr>
+
+        <!-- 7:00 PM -->
+        <tr>
+          <td class="time">7:00PM</td>
+          <!-- Mon/Tue/Wed occupied by rowspans -->
+          <td class="empty"></td>
+          <td class="empty"></td>
+        </tr>
+
+        <!-- 8:00 PM -->
+        <tr>
+          <td class="time">8:00PM</td>
+          <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
